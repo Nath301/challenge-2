@@ -2,6 +2,7 @@ body{
     font-family: poppins;
     margin: 0;
     width: 1280px;
+    background-color: hsl(0, 0%, 98%);
 }
 .upper-title{
     margin: 10px auto;
@@ -12,6 +13,7 @@ p{
     font-size: 12px;
     font-weight: lighter;
     margin-top: 0px;
+    color: hsl(229, 6%, 66%);
 }
 .main-title{
     display: flex;
@@ -19,12 +21,13 @@ p{
 }
 h1{
     margin-top: 0;
-    font-weight: bold;
+    color: hsl(234, 12%, 34%);
+    font-size: 28px;
+    margin-bottom: 0;
 }
-h2{
+.bolder{
+    font-weight: bold;
     margin-top: 0;
-    margin-bottom: 5px;
-    font-weight: lighter;
 }
 @font-face{
     font-family: poppins;
@@ -33,16 +36,27 @@ h2{
 .icon-text{
     font-size: 13px;
     width: 280px;
+    color:hsl(229, 6%, 66%);
 }
 .text{
     margin-left: 30px;
     margin-right: 20px;
+    position: relative;
+    top: 20px;
+}
+.layer{
+    width: 350px;
+    height: 200px;
+    box-shadow: 5px 10px 28px -8px rgba(0,0,0,0.39);
+    border-radius: 5px;
 }
 .cadre{
     width: 350px;
     height: 200px;
-    box-shadow: 1px 2px 20px -1px rgba(0,0,0,0.57);
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    top: -13px;
 }
 .icons{
     margin-top: 60px;
@@ -56,27 +70,33 @@ h2{
 
 }
 .images{
-
+    position: relative;
+    float: right;
+    margin-right: 15px;
 }
-#c-left{
+#cyan{
     grid-column-start: 1;
     grid-row-start: 2;
     grid-row-end: span 2;
+    background-color: hsl(180, 62%, 55%);
 }
-#c-upper{
+#red{
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: span 2;
+    background-color: hsl(0, 78%, 62%);
 }
-#c-right{
+#blue{
     grid-column-start: 3;
     grid-row-start: 2;
     grid-row-end: span 2;
+    background-color: hsl(212, 86%, 64%);
 }
-#c-bottom{
+#orange{
     grid-column-start: 2;
     grid-row-start: 3;
     grid-row-end: span 2;
+    background-color: hsl(34, 97%, 64%);
 }
 .attribution{
     margin-top: 25px;
